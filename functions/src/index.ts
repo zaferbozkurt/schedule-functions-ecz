@@ -2,12 +2,12 @@
  * Firebase Scheduled Functions - Basit Örnek
  */
 
-import { setGlobalOptions } from "firebase-functions";
-import { onSchedule } from "firebase-functions/v2/scheduler";
+import {setGlobalOptions} from "firebase-functions";
+import {onSchedule} from "firebase-functions/v2/scheduler";
 import * as logger from "firebase-functions/logger";
 
 // Maliyet kontrolü için global ayar
-setGlobalOptions({ maxInstances: 10 });
+setGlobalOptions({maxInstances: 10});
 
 /**
  * Her gün saat 09:00'da (Türkiye saati) çalışan basit bir scheduled function
